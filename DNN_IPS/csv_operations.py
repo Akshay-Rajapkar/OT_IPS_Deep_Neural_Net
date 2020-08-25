@@ -1,7 +1,7 @@
 import csv
 rows = []
 fields = ["Date & Time", "Source IP", "Destination IP", "Source MAC", "Destination MAC",
-            "Protocol","Flags", "Src Port", "Dst Port", "Length"]
+            "Protocol","Flags", "Src Port", "Dst Port", "Length", "packet_type"]
 
 
 def first_write():

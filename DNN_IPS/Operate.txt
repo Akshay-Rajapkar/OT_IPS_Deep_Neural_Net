@@ -1,0 +1,8 @@
+1) sysctl net.ipv4.ip_forward=1 (Enable ip forward in linux)
+
+2) sudo python3 connection.py (Only for IPS)
+IDS : - sudo iptables -I INPUT -j NFQUEUE --queue-num 0
+	sudo iptables -I OUTPUT -j NFQUEUE --queue-num 0
+
+3) sudo python3 net_connect.py
+(Check versions of sklearn and tensorflow) 

@@ -10,12 +10,13 @@ from net_scan import *
 def process_packet(packet):
     scapy_packet = scapy.IP(packet.get_payload())
     features = np.array(check_fields(scapy_packet,lst_mac))
-    write_data(details)
     prob_pred = model.predict(features)
-    if str(*class_label_pred.inverse_transform([np.argmax(prob_pred)])) == "Normal":
+    packet_type = str(*class_label_pred.inverse_transform([np.argmax(prob_pred)]))
+    write_data(details.append(packet_type))
+    if packet_type == "Normal":
         packet.accept()
     else:
-        write_alerts(details)
+        write_alerts(details.append(packet_type))
         packet.drop()
 
 
