@@ -15,3 +15,17 @@ protocols Modbus and DNP3 with their inside communication fields using deep pack
 The analytical results show 99.88% accuracy on binary classification and 97.95% accuracy on multiclass
 classification of different attack vectors performed on network with low false positive rate. These results are
 also validated by actual deployment of IPS in SCADA systems with the prevention of DOS attack.
+
+
+## Deployment
+
+Set IP tables before run
+
+```bash
+  sysctl net.ipv4.ip_forward=1
+```
+Connect in system's network
+```bash
+  sudo python3 connection.py
+  sudo python3 net_connect.py
+```
