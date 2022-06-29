@@ -17,6 +17,19 @@ classification of different attack vectors performed on network with low false p
 also validated by actual deployment of IPS in SCADA systems with the prevention of DOS attack.
 
 
+## Dataset
+  In SCADA communication, most of packets and control signals are repeated over a time and hence it
+is essential to remove such duplicate entries from the database. A data cleaning operation is performed to
+clean the database and unique set of communication is achieved as a Baselines of SCADA communication.
+after comparing features of each entry and discarding duplicate traffic, the final database consist of 55998
+normal data baselines and 49152 records corresponds to attack data.
+ ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+ The protocol distribution of Normal and Malicious traffic shown in Fig. above.
+ ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+ 
+ 
+ 
+
 ## Deployment
 
 Set IP tables before run
