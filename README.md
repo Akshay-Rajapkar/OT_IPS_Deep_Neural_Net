@@ -46,7 +46,7 @@ positive rate (FPR) indicates that less probability of misclassification of mali
 evaluation metrics for each class is explain in Table.
 
 | Classess               | Precision | Recall | F1-score |
-| :--------------------- | :-------= | :----- |:-------- |
+| :--------------------- | :-------- | :----- |:-------- |
 | Normal                 | 100       | 98     | 99       |
 | DOS Modbus flooding    | 90        | 98     | 94       |
 | DOS UDP scan           | 97        | 91     | 94       |
