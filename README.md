@@ -28,7 +28,33 @@ normal data baselines and 49152 records corresponds to attack data.
  ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
  
  
- 
+## Binary classification evaluation metrics
+  The designed DNN model is evaluated on test set. Accuracy, Sensitivity, Recall, Specificity, precision, f1-
+score are the metrics used to check the effectiveness of proposed intrusion prevention model on real SCADA
+data as discussed in below Table. The 70% data points are used for training model and 30% data points use
+for testing and validating model performance.
+
+| Precision | Recall    | TPR | FPR | F1-score |
+| :-------- | :------- | :--- |:--- |:-------- |
+| 100       | 99.75    | 99.75| 0.24| 99.98    |
+
+Proposed model able to classify normal and malicious traffic with accuracy of 99.89% with low false
+positive rate (FPR) indicates that less probability of misclassification of malicious traffic as normal
+
+## Multi-class classification evaluation metrics
+  The same model is trained and tested for different classes of attacks gives accuracy of 97.95% and all
+evaluation metrics for each class is explain in Table.
+
+| Classess               | Precision | Recall | F1-score |
+| :--------------------- | :-------= | :----- |:-------- |
+| Normal                 | 100       | 98     | 99       |
+| DOS Modbus flooding    | 90        | 98     | 94       |
+| DOS UDP scan           | 97        | 91     | 94       |
+| MITM                   | 97        | 100    | 98       |
+| Malware stealth scan   | 99        | 99     | 99       |
+| Ping scan              | 100       | 100    | 100      |
+| UDP port & service scan| 100       | 97     | 98       |
+
 
 ## Deployment
 
